@@ -1,4 +1,4 @@
-const BASEURL = "https://codewars-api.systems-group.org/api/";
+const BASEURL = "http://127.0.0.1:8000/api/";
 
 
 const SUBMISSION_STATUS = {
