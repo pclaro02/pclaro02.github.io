@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Materialize CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Russo One font -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+  <!-- Highlight.js for code blocks-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>Code Wars</title>
+</head>
+<body class="white-bg">
+  <nav class="blue-bg">
+    <div class="nav-wrapper">
+      <img src="assets/cw-logo.png" class="brand-logo-img">
+      <a class="brand-logo">Code Wars</a>
+      <ul id="nav-mobile" class="right">
+        <li>
+          <a
+            class="hide-on-med-and-down"
+            href="https://systems-group.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sobre Nós
+          </a>
+        </li>
+        <li>
+          <a
+            class="hide-on-med-and-down modal-trigger"
+            href="#modal-contacts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contactos
+          </a>
+          <!-- Modal for contacts -->
+            <div id="modal-contacts" class="modal black-text">
+              <div class="modal-content">
+                <div class="row">
+                  <h2 class="center-align">Contacta-nos!</h2>
+                  <h5 class="center-align">
+                    Gostavas de participar mas ainda tens algumas dúvidas sobre o evento? Não hesites em contactar-nos!
+                  </h5>
+                </div>
+                <div class="row">
+                  <div class="col s12 l6 center-align">
+                    <a href="tel:00351926267938">
+                      <span class="mdi mdi-phone"></span>
+                      <p>
+                        (+351) 910 323 131<br>
+                        Maria Couto (CEO)
+                      </p>
+                    </a>
+                  </div>
+                  <div class="col s12 l6 center-align">
+                    <a href="mailto:geral@systems-group.org">
+                      <span class="mdi mdi-email-outline"></span>
+                      <p>
+                        geral@systems-group.org<br>
+                        Resposta dentro de um dia!
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </li>
+        <li>
+          <a
+            class="btn fix-hover signup white-bg"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdS_p71ItnvGMbjeFSC0Qea29GoikrKuz6MTPe1PEKmgAT2TQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Inscrever
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="banner-container">
+    <img src="assets/banner.png">
+    <div id="banner-text">
+      <h1 id="title">Code Wars</h1>
+      <h3 id="subtitle">Powered by Ernst & Young</h3>
+    </div>
+  </div>
+  <div class="container" id="content">
+    <div class="row">
+      <div class="col s12">
+        <ul id="ul-tabs" class="tabs white-bg">
+          <li class="tab col s3">
+            <a href="#tab-about">Sobre</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#tab-schedule">Horário</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#tab-challenges">Desafios</a>
+          </li>
+          <li class="tab col s3">
+            <a href="#tab-instructions">Instruções</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="tab-about">
+      <div class="row">
+        <div class="col s12 l7">
+          <h2 class="text-justify">A Code Wars Chegou!</h2>
+          <p class="justify-text">
+            Dia 12 de Março não percas a melhor competição de programação do
+            semestre!
+          </p>
+          <div>
+            <img src="assets/sg-logo.png" class="brand-logo">
+            <img src="assets/ey-logo.png" class="brand-logo">
+          </div>
+          <a
+            class="btn-large fix-hover signup blue-bg"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdS_p71ItnvGMbjeFSC0Qea29GoikrKuz6MTPe1PEKmgAT2TQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Inscrever
+          </a>
+          <p class="warning">As inscrições foram perlongadas até dia 9 de março!</p>
+        </div>
+        <div class="col s12 l5 center-align">
+          <a
+            href="https://www.instagram.com/p/CafoM35oqJ5/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="assets/intro-right-new.png" width="80%">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="text-justify">O que é a Code Wars?</h2>
+        <div class="row">
+          <div class="col s12 l8">
+            <p class="text-justify">
+              A Code Wars é uma competição de programação entre alunos do IST,
+              promovida pela Systems Group, em parceria com a EY, que permite
+              um ambiente competitivo saudável, enquanto os alunos são
+              desafiados a desenvolver as suas capacidades de programação!<br>
+
+              Queres mostrar o que vales? Inscreve-te individualmente ou numa
+              equipa de até 4 participantes e participa nesta grande
+              competição!<br>
+
+              O evento contará também com momentos de convívio e networking
+              entre as equipas e os jurados, promovendo o contacto e uma maior
+              proximidade com o mundo empresarial, assim como com palestras em
+              “hot-topics” relacionados com a área de IT.<br>
+
+              O evento terá lugar no Taguspark, dia 12 de março, entre as 9h e
+              as 19h. Asseguramos shuttle entre os 2 polos no início e no fim
+              da competição, assim como almoço e coffee break. Os
+              participantes não terão de suportar qualquer custo.
+            </p>
+          </div>
+          <div class="col s12 l4">
+            <div class="card blue-bg">
+              <div class="card-content white-text">
+                <span class="card-title center-align">Save the date!</span>
+                <ul>
+                  <li>
+                    <img src="assets/calendar.png">
+                    <span> 12/03/2022</span>
+                  </li>
+                  <li>
+                    <img src="assets/clock.png">
+                    <span> 09h00 - 19h00</span>
+                  </li>
+                  <li>
+                    <img src="assets/location-pin.png">
+                    <span> Taguspark IST</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l8">
+          <h2 class="text-justify">Prémios</h2>
+          <p class="text-justify">
+            Temos 3 grandes prémios para as equipas com a melhor performance!
+            Adicionalmente, os membros da equipa vencedora terão direito a
+            uma entrevista de recrutamento com a EY, que poderá evoluir para
+            um estágio de Verão, caso ambas as partes se mostrem
+            interessadas.<br>
+
+            O júri será composto pelos responsáveis da realização do
+            enunciado, profissionais da EY e alunos da SystemsGroup!<br>
+
+            Não vais querer perder estes prémios!
+          </p>
+        </div>
+        <div class="col s12 l4 center-align">
+          <img src="assets/premios.png" width="60%">
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="text-justify">Palestras</h2>
+        <p class="text-justify">
+          Curioso sobre o que está em alta no mercado de tech? Vem saber mais
+          sobre hot-topics na área de IT, em 2 palestras desenvolvidas
+          especialmente para ti!<br>
+
+          Vais ter a oportunidade de ouvir e contactar com profissionais da
+          área que partilharão a sua experiência e insights!
+        </p>
+        <div class="row">
+          <div class="col s12 l6">
+            <img src="assets/palestra_devops.png" width="100%">
+            <h4 class="text-justify">DevOps</h4>
+            <p class="text-justify">
+              DevOps, também conhecido como "Development Ops", é o ramo que
+              liga os profissionais de desenvolvimento de software com
+              administradores de sistema de modo a automatizar, acelerar e
+              assegurar todo o processo de deployment e manutenção de
+              aplicações.
+            </p>
+
+          </div>
+          <div class="col s12 l6">
+            <img src="assets/palestra_fincrime.png" width="100%">
+            <h4 class="text-justify">FinCrime</h4>
+            <p class="text-justify">
+              Financial Crimes são uma ameaça crescente no contexto no mundo
+              cibernético, do qual deriva novas ferramentas tanto para a
+              realização de atos fraudulentos como para o combate aos mesmos,
+              sendo um tópico de extremo interesse no campo de Cibersegurança.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-schedule">
+      <div class="row">
+        <div class="col s12 center-align">
+          <img class="img-schedule" src="assets/schedule.jpeg">
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-challenges">
+      <h2 class="center-align">
+        Não existem desafios disponíveis... Ainda!
+      </h2>
+    </div>
+
+    <!-- Template for getting challenge results -->
+    <template id="template-get-results">
+      <form id="form-get-results" class="row" autocomplete="off">
+        <div class="col s12 l3 offset-l5 input-field">
+          <i class="prefix">
+            <span class="mdi mdi-account-group"></span>
+          </i>
+          <input
+            id="form-group"
+            name="group-number"
+            type="number"
+            required
+          >
+          <label for="form-group">Número do Grupo</label>
+        </div>
+        <div class="col s10 l3 input-field">
+          <i class="prefix">
+            <span class="mdi mdi-form-textbox-password"></span>
+          </i>
+          <input
+            id="form-password"
+            name="password"
+            type="text"
+            required
+          >
+          <label for="form-password">Password</label>
+        </div>
+        <div class="col s1 l1 input-field">
+          <button
+            class="btn blue-bg tooltipped"
+            type="submit"
+            data-position="top"
+            data-tooltip="Verificar resultados"
+          >
+            <span class="mdi big mdi-progress-check"></span>
+          </button>
+        </div>
+        <div class="col s12 l2 offset-l10">
+          <p id="p-get-results-error" class="hide">ERROR</p>
+        </div>
+      </form>
+    </template>
+
+    <!-- Card template for every challenge -->
+    <template id="template-challenge-card">
+      <div class="col s12 l4">
+        <div class="card" data-id="">
+          <div class="card-content">
+            <span class="card-title truncate center-align">NOME</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Modal to show and open for every challenge -->
+    <div id="modal-challenge" class="modal no-autoinit" data-id="">
+      <div class="modal-content">
+        <h2 id="modal-title">TITLE</h2>
+        <div id="modal-content" class="row">
+          CONTENT
+        </div>
+        <div class="row">
+          <h4 class="center-align">Nova submissão</h4>
+          <form autocomplete="off">
+            <div class="row">
+              <div class="input-field col l4 offset-l2 s12">
+                <i class="prefix">
+                  <span class="mdi mdi-account-group"></span>
+                </i>
+                <input
+                  id="form-group-modal"
+                  name="group-number"
+                  type="number"
+                  required
+                >
+                <label for="form-group-modal">Número do Grupo</label>
+              </div>
+              <div class="input-field col l4 s12">
+                <i class="prefix">
+                  <span class="mdi mdi-form-textbox-password"></span>
+                </i>
+                <input
+                  id="form-password-modal"
+                  name="password"
+                  type="text"
+                  required
+                >
+                <label for="form-password-modal">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="file-field input-field col l8 offset-l2 s12">
+                <div class="btn blue-bg">
+                  <span>File</span>
+                  <input type="file" name="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input
+                    type="text"
+                    class="file-path"
+                    placeholder="Escolher ficheiros..."
+                    required
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <p id="error-message" class="hide">ERROR</p>
+              <button
+                type="submit"
+                class="btn col l2 offset-l5 blue-bg s12"
+              >
+                Submeter
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="row hide" id="row-table-results">
+          <table>
+            <thead>
+              <tr>
+                <th>Id da Submissão</th>
+                <th>Estado</th>
+                <th>Resultado</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Loading modal -->
+    <div id="modal-loading" class="modal no-autoinit">
+      <div class="modal-content">
+        <div class="preloader-wrapper big active no-autoinit">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab-instructions">
+      <h2 class="text-justify">Leet Code (Manhã)</h2>
+      <p class="text-justify">
+        Testa a tua capacidade de resolução de problemas rápidamente com
+        desafios algorítmicos!<br>
+        <span class="warning">
+          Nota: os desafios de Leet Code não são a competição principal, pelo
+          que têm outra premiação a anunciar.
+        </span>
+      </p>
+      <h4>Linguagens aceites</h4>
+      <ul class="browser-default">
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+      <h4>Submissões</h4>
+      <p class="text-justify">
+        Na submissão de uma resolução a cada desafio, deve ser submetido
+        unicamente um ficheiro com a extensão apropriada à linguagem
+        escolhida.<br>
+        As submissões são testadas automaticamente, com um timeout de 5
+        minutos.<br>
+        Para realizares uma submissão, escolhe um desafio na tab
+        <a id="anchor-challenges">Desafios</a> e faz a submissão com o teu
+        grupo!
+      </p>
+      <h4>Formato</h4>
+      <p class="text-justify">
+        As submissões são avaliadas com um número variável de testes.<br>
+        Um desafio é considerado "completo" quando pelo menos uma submissão
+        passa TODOS os testes (não precisa ser a última). Se um desafio tem
+        submissões, mas nenhuma passa TODOS os testes, é dado como
+        "incompleto". Um desafio sem submissões é dado como "sem
+        submissões".<br>
+        Existirão 2 momentos de avaliação: LeetCode + Frenetic Coding.<br>
+        No momento de LeetCode, vários enunciados que irão introduzir temas
+        para o projeto serão disponibilizados. O objetivo é fazer o maior
+        número possível - 3 pontos por desafio "completo"<br>
+        Mais tarde, no momento de frenetic coding, um batch de mini-desafios
+        de raciocínio aparecerá e o objetivo será passar a todos os testes,
+        o mais rapidamente possível - 1 ponto por desafio "completo".
+      </p>
+      <h4>Input - Output</h4>
+      <p class="text-justify">
+        Todo o input irá ser enviado para o STDIN. Todo o output deve ser
+        enviado para o STDOUT. Em baixo pode encontrar a maneira mais simples
+        de receber input e enviar output em todas as linguagens disponíveis;
+        outras maneiras são aceites, mas o nosso testador automático pode não
+        as considerar. Em caso de dúvida, perguntem à nossa equipa.
+      </p>
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <span class="mdi mdi-language-python"></span>
+            Python
+          </div>
+          <div class="collapsible-body">
+            <span>
+              O programa é invocado com <code>python ficheiro</code>.<br><br>
+              Recolher input:
+<pre><code class="language-python">user_input = input()</code></pre>
+              Enviar output:
+<pre><code class="language-python">print(output)</code></pre>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="mdi mdi-language-javascript"></span>
+            Javascript
+          </div>
+          <div class="collapsible-body">
+            <span>
+              O programa é invocado com <code>node ficheiro</code>.<br><br>
+              Recolher input:
+<pre><code class="language-javascript">const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  terminal: false
+});
+rl.on("line", (input) => {
+  // Operações com "input"
+  process.exit(0);
+});</code></pre>
+              Apanhar múltiplas linhas de input:
+<pre><code class="language-javascript">const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  terminal: false
+});
+
+let inputs = [];
+let input_len;
+
+rl.on("line", (input) => {
+  if(!input_len) {
+    input_len = parseInt(input);
+    return;
+  }
+  if(input_len != inputs.length){
+    inputs.push(input);
+    return;
+  }
+  // Operações finais com os inputs todos recolhidos em "inputs".
+  process.exit(0);
+});
+</code></pre>
+              Enviar output:
+<pre><code class="language-javascript">console.log(output);</code></pre>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="mdi mdi-language-c"></span>
+            C language
+          </div>
+          <div class="collapsible-body">
+            <span>
+              O programa é compilado com <code>gcc ficheiro -o ./ouput</code>.
+              <br><br>
+              O programa é invocado com <code>./output.</code><br><br>
+              Recolher input:
+<pre><code class="language-c">#O input será enviado sempre como uma string.
+scanf("%s", &input);</code></pre>
+              Enviar output:
+<pre><code class="language-c">printf("%s", output);</code></pre>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="mdi mdi-language-cpp"></span>
+            C++ language
+          </div>
+          <div class="collapsible-body">
+            <span>
+              O programa é compilado com <code>g++ ficheiro -o ./ouput</code>.
+              <br><br>
+              O programa é invocado com <code>./output.</code><br><br>
+              Recolher input:
+<pre><code class="language-cpp">#O input será enviado sempre como uma string.
+scanf("%s", &input);</code></pre>
+              Enviar output:
+<pre><code class="language-cpp">printf("%s", output);</code></pre>
+            </span>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <span class="mdi mdi-language-java"></span>
+            Java
+          </div>
+          <div class="collapsible-body">
+            <span>
+              O programa é compilado com <code>javac ficheiro</code>.
+              <br><br>
+              O programa é invocado com <code>java nome_ficheiro</code>
+              <br><br>
+              Recolher input:
+<pre><code class="language-java">import java.util.Scanner;
+//(...)
+Scanner input = new Scanner(System.in);
+//(...)</code></pre>
+              Enviar output:
+<pre><code class="language-java">System.out.println(output);</code></pre>
+            </span>
+          </div>
+        </li>
+      </ul>
+      <h2 class="text-justify">Projeto (Tarde)</h2>
+      <p class="text-justify">
+        A competição principal consiste num desenvolvimento mais extenso de um
+        projeto. Serão disponibilizados dois enunciados diferentes, com o
+        objetivo de desenvolver uma ferramenta que possa ser apresentada.
+        Poderá ser uma utilidade de linha de comando, um website ou mesmo uma
+        desktop aplication. Fica a critério do grupo, desde que cumpra com os
+        requisitos do enunciado.<br>
+        Cada grupo escolhe apenas um dos projetos a desenvolver e pode
+        utilizar a linguagem/ferramentas que desejar.<br>
+        Deve ser feita a submissão de todo o source code num ficheiro ZIP da
+        mesma maneira que foi feita para os desafios de Leet Code.<br>
+        No final, os projetos serão avaliados grupo a grupo através de uma
+        breve demonstração individual aos jurados.
+      </p>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+/* Document setup --------------------------------------------------------- */
+:root {
+  --blue: #3d5d9f;
+  --white: #F6F6F6;
+  --black: #2F3029;
+  --green: palegreen;
+  --yellow: #f9da7b;
+}
+body {
+  overflow-y: scroll !important;
+}
+a {
+  cursor: pointer;
+}
+
+
+/* Auxiliary classes ------------------------------------------------------ */
+.blue-bg {
+  background-color: var(--blue) !important;
+}
+.white-bg {
+  background-color: var(--white) !important;
+}
+.black-bg {
+  background-color: var(--black) !important;
+}
+.green-bg {
+  background-color: var(--green);
+}
+.yellow-bg {
+  background-color: var(--yellow);
+}
+.fix-hover.btn:hover {
+  filter: brightness(85%);
+}
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.warning {
+  font-weight: bold;
+  color: darkred;
+}
+
+/* Common classes --------------------------------------------------------- */
+.input-field .prefix.active {
+  color: var(--blue) !important;
+}
+.input-field label.active {
+  color: var(--blue) !important;
+}
+.input-field input:focus {
+  border-bottom: 1px solid var(--blue) !important;
+  box-shadow: 0 1px 0 0 var(--blue) !important;
+}
+
+.mdi.big {
+  font-size: large;
+}
+
+.modal {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+
+/* Navbar ----------------------------------------------------------------- */
+/* Overwrite these styles for mobile */
+@media only screen and (max-width: 992px){
+  nav .brand-logo {
+    left: inherit !important;
+    -webkit-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+  }
+}
+nav .brand-logo-img {
+  max-height: 100%;
+  padding: 4px;
+  margin-right: 0px;
+}
+nav .btn.signup {
+  color: var(--blue);
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+
+/* Banner ----------------------------------------------------------------- */
+.banner-container {
+  position: relative;
+  text-align: center;
+}
+.banner-container img {
+  width: 100%;
+}
+#banner-text {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  color: var(--white);
+}
+#banner-text #title {
+  font-family: "Russo One";
+  text-align: left;
+  font-size: 8vw;
+  margin: 0px;
+}
+#banner-text #subtitle {
+  text-align: right;
+  font-size: 3vw;
+  margin: 0px;
+}
+
+/* Contacts */
+#modal-contacts a {
+  color: black;
+}
+#modal-contacts span {
+  font-size: 64px;
+  padding-top: 20px;
+  margin-bottom: 45px;
+}
+#modal-contacts p {
+  line-height: normal;
+}
+
+/* Content and tabs adjustments ------------------------------------------- */
+#content h1 {
+  color: var(--black);
+}
+#content .tabs a {
+  color: var(--black);
+}
+#content .tabs a.active {
+  color: var(--white);
+  background-color: var(--black);
+}
+#content .tabs .indicator {
+  height: 0px;
+}
+
+
+/* tab-about -------------------------------------------------------------- */
+/* Section one */
+#tab-about .brand-logo {
+  max-height: 85px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+#tab-about .btn-large.signup {
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+/* Section two */
+#tab-about .card {
+  border-radius: 32px;
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+}
+#tab-about .card img{
+  max-height: 20px;
+}
+#tab-about .card span {
+  font-size: 20px;
+}
+#tab-about .card div.valign-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* tab-schedule ----------------------------------------------------------- */
+#tab-schedule .img-schedule {
+  width: 60%;
+}
+
+@media only screen and (max-width: 992px){
+  #tab-schedule .img-schedule {
+    width: 100%;
+  }
+}
+
+
+/* tab-challenges --------------------------------------------------------- */
+#tab-challenges .card {
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+#tab-challenges .card span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#tab-challenges #p-get-results-error {
+  color: red;
+}
+
+#modal-challenge #error-message {
+  color: red;
+  text-align: center;
+}
+
+#modal-loading {
+  padding: 0px;
+  overflow: hidden;
+  width: 112px !important;
+  height: 112px !important;
+  transform: translateY(-50%) scaleX(1) !important;
+}
+
+
+/* tab-instructions ------------------------------------------------------- */
+#tab-instructions .collapsible .collapsible-header {
+  font-size: 25px;
+}
