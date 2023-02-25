@@ -1,4 +1,4 @@
-const BASEURL = "http://127.0.0.1:8000/api/";
+const BASEURL = "http://165.22.26.59/api/";
 
 
 const SUBMISSION_STATUS = {
