@@ -1,10 +1,10 @@
 /* Document setup --------------------------------------------------------- */
 :root {
-  --blue: #3d5d9f;
+  --blue: #051470;
   --white: #F6F6F6;
   --black: #2F3029;
   --green: palegreen;
-  --yellow: #f9da7b;
+  --yellow: #E8C555;
 }
 body {
   overflow-y: scroll !important;
